@@ -89,7 +89,7 @@ def save_qualifying_loans(qualifying_loans):
                 save_csv(csvpath, qualifying_loans)
 
             elif preferred_path == True:
-                enter_path = questionary.text("Only Enter Your Desired Path(Do Not Include in it This File Name. Example: ./data)").ask()
+                enter_path = questionary.text("Only Enter an existing Path (Do Not Include in it This File Name. Example: ./data)").ask()
                 csvpath = (f"{file_name}.csv")
                 print(f"Thank you for your time! Your Qualifying loans were saved as {csvpath}")
                 print(f"Dont hesitate to Contact us if you have any questions, Have a great Day!")

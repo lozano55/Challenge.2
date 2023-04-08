@@ -12,7 +12,7 @@ import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv, save_csv, save_qualifying_loans
+from qualifier.utils.fileio import load_csv, save_qualifying_loans
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,

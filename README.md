@@ -54,50 +54,59 @@ Now To Install the Dependencies Input These Commands into your command line
 
 ---
 
+## Imports
+
+Below are Required Imports Required for the appication
+>Note: Key Functions were also imported (not Included below) ,and are available to view in app.py
+
+```python
+import fire
+import questionary
+import sys
+import csv
+from pathlib import Path
+```
+
+&nbsp;
+
+---
+
 ## Usage
 &nbsp;
  
 1. Via Terminal(MacOS) or Command shell/PowerShell(Windowns). Type: `python app.py`
 
-2. Input a file or file path of the list of loans (.csv)
+2. User Will Be Prompted for a file or file path of the list of loans (.csv). Type: `./data/daily_rate_sheet.csv`
 
-3. User can now dinamically input basic financial information and compare it to the list of loans, and see the eligibility of a home loan.
-4. Finally the Application will Produce the List of loans that the User Qualified for 
+3. User can now dinamically input basic financial information that will be compared to the list of lenders, and see the eligibility of a home loan.
+4. The Application will then display the amount of loans the User Qualified for 
+
+5. The CLI then asks the User if a Loan File Should Be saved 
+>- If the User Choose(n): then no file saves regardless of eligibily on a loan.
+>- If the User Choose(Y): But was not eligible for at least 1 loan, then the CLI Automatically exits system and displays message 
+>- If the User Choose(Y): and User was eligible for at least 1 loan then, then User will be prompted to Type a name for the file(not including the .csv at the end of the file name)
+
+&nbsp;
+
+
+6. The CLI then prompts the User if there is a preffered path to store the file 
+>- If the User Choose (n): Then the File is saved to the current folder the User is in, the system Automatically exits, and displays message 
+>- if the User Choose (Y): Then The User is will then be prompted to Type in the Path (Not Including the Loan File name just typed (Example: ./data)). This then saves the file into the preffered path and then displays a few helpful messages.
+
 
 &nbsp;
 
 ![Example Image](./pictures/Photo.png)
-&nbsp;
-
----
-  
-## Contributors
-
-Martin Lozano
-
-&nbsp;
-
----
-
-## License
 
 &nbsp;
 
 --- 
 
-## Code Obtained 
-
-`&nbsp;` Code was obtained via [stack overflow](https://stackoverflow.com/questions/15721373/how-do-i-ensure-that-whitespace-is-preserved-in-markdown) to create spaces in MarkDown file
-
-&nbsp;
-
-Understanding code functionality for  [questionary](https://questionary.readthedocs.io/en/stable/pages/types.html#confirmation)
-
----
-
-## Additional Functions added
+## Functions added
 
 1. This Function allows the application to save the eligible loans into a (.csv) file
+>Note: Function available to view in fileio.py. Function import to app.py not required for functinality.
+
 ```python 
 def save_csv(csvpath, qualifying_loans):
  
@@ -114,6 +123,7 @@ def save_csv(csvpath, qualifying_loans):
 &nbsp;
 
 &nbsp;
+### Below is the function and functionality that allowed the above User Interation
 
 2. This is a Highly interactive and User Friendly function that allows the User to choose a few options 
 
@@ -128,6 +138,8 @@ First the CLI asks the User if a Loan File Should Be saved
 The CLI then prompts the User if there is a preffered path to store the file 
 >- If the User Choose (n): Then the File is saved to the current folder the User is in, the system Automatically exits, and displays message 
 >- if the User Choose (Y): Then The User is will then be prompted to Type in the Path (Not Including the Loan File name just typed (Example: ./data)). This then saves the file into the preffered path and then displays a few helpful messages.
+
+>Note: Function available to view in fileio.py. Function import available to view in line 15 of app.py
 
 ```python
 def save_qualifying_loans(qualifying_loans):
@@ -172,4 +184,29 @@ def save_qualifying_loans(qualifying_loans):
 
 
 ```
+&nbsp;
+
+---
+
+## Refereces 
+
+`&nbsp;` Code was obtained via [stack overflow](https://stackoverflow.com/questions/15721373/how-do-i-ensure-that-whitespace-is-preserved-in-markdown) to create empty spaces in MarkDown file
+
+
+Understanding code functionality for  [questionary](https://questionary.readthedocs.io/en/stable/pages/types.html#confirmation)
+
+&nbsp;
+
+---
+
+## Contributors
+
+Martin Lozano
+
+&nbsp;
+
+---
+
+## License
+
 &nbsp;
