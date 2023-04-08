@@ -28,3 +28,23 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+
+
+def save_csv(csvpath, qualifying_loans):
+    """Saves the CSV file with path physically hardcoded 
+
+    Args:
+        csvpath: Path to be created 
+        qualifying_loans: The Refined loans User Qualified for 
+
+    """
+    with open(csvpath, "w", newline="") as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+        
+        header = ["Lender","Max Loan Amount","Max Loan to value","Max dept to Income","Minimum Credit Score","Interest Rate "]
+
+        csvwriter.writerow(header)
+
+        for data in qualifying_loans:
+            csvwriter.writerow(data)

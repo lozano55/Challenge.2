@@ -91,15 +91,75 @@ Martin Lozano
 
 &nbsp;
 
+Basic code functionality for [questionary](https://questionary.readthedocs.io/en/stable/pages/types.html#confirmation)
+
 ---
 
 ## Additional Functions added
 
+1. This Function allows the application to save the eligible loans into a (.csv) file
 ```python 
 def save_csv(csvpath, qualifying_loans):
+ 
     with open(csvpath, "w", newline="") as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=",")
+        
+        header = ["Lender","Max Loan Amount","Max Loan to value","Max dept to Income","Minimum Credit Score","Interest Rate "]
+
+        csvwriter.writerow(header)
 
         for data in qualifying_loans:
             csvwriter.writerow(data)
+```
+&nbsp;
+
+&nbsp;
+
+2. This is a Highly interactive and User Friendly function that allows the User to choose a few options 
+
+First the Function asks the User if Loan File Should Be saved 
+>- If The User Choose(n): to not save the file, then no file saves.
+>- If the User Choose(Y): then the User will be prompted to Type a name for the file(not including .csv)
+
+&nbsp;
+
+
+The Function then propmts the User if there is a preffered path to store the file 
+>- If the User Choose (n): Then the File is saved to the current folder the User is in 
+>- if the User Choose (Y): Then The User is Directed to Type in the Path (Not Including the Loan File). making the saved file be stored in the preffered path
+
+```python
+def save_qualifying_loans(qualifying_loans):
+
+    save_file = questionary.confirm("Do you want to Save the Qualifying loans into a file?").ask()
+
+    if save_file == True:
+        file_name = questionary.text("Please Enter a name for this file (!Do not include .csv!)").ask()
+        preferred_path = questionary.confirm("If You Know your Preffered Path Enter (Y) If you dont know what a Path Is Enter(n)").ask()
+
+        if preferred_path == False:
+            csvpath = (f"{file_name}.csv")
+            csvpath = Path(csvpath)
+            save_csv(csvpath, qualifying_loans)
+
+        elif preferred_path == True:
+            enter_path = questionary.text("Only Enter Your Desired Path(Do Not Include in it This File Name)").ask()
+            csvpath = (f"{file_name}.csv")
+            csvpath = (f"{enter_path}/{csvpath}")
+            csvpath = Path(csvpath)
+            save_csv(csvpath, qualifying_loans)
+```
+&nbsp;
+
+* For a more direct approach Utilize 
+```python
+def save_qualifying_loans(qualifying_loans):
+    save_file = questionary.confirm("Do you want to Save the Qualifying loans into a file?").ask()
+
+    if save_file == True:
+        file_name = questionary.text("Please Enter a name for this file or Enter a File Path that includes a name for this file (!Do not include .csv!)").ask()
+        csvpath = (f"{file_name}.csv")
+        csvpath = Path(csvpath)
+        save_csv(csvpath, qualifying_loans)
+
 ```
