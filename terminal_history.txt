@@ -1,0 +1,773 @@
+   50  pwd
+   51  ls
+   52  cd Desktop ; mv Test cd ~/Downloads ; cd ~/Downloads ; open
+   53  open .
+   54  clear
+   55  cd ~
+   56  pwd
+   57  ls
+   58  cd Downloads ; mv Test cd ~/Desktop ; cd ~/Desktop ; cd Test ; open .
+   59  ls
+   60  pwd
+   61  clear
+   62  pwd
+   63  mv Test Tommorow
+   64  cd ..
+   65  mv Test Tommorrow
+   66  mv Tommorow Test
+   67  mv Tommorrow Test
+   68  clear
+   69  .ssh/
+   70  cd ~
+   71  .ssh/
+   72  .ssh/
+   73  clear
+   74  pwd
+   75  cd Desktop
+   76  cd Test
+   77  pwd
+   78  clear
+   79  git clone git@github.com:lozano55/Practice.git
+   80  cd practice
+   81  ls
+   82  git add -A
+   83  git commit -m "Added an index.html file"
+   84  git push origin main
+   85  pwdx
+   86  pwd
+   87  clear
+   88  cd Desktop
+   89  cd Test
+   90  pwd
+   91  clear
+   92  git clone git@github.com:lozano55/Practice.git
+   93  open .
+   94  cd Practice
+   95  pwd
+   96  clear
+   97  ls
+   98  git add .
+   99  git commit -m "Added an Index.html file"
+  100  git push origin main
+  101  git checkout -b Header
+  102  git add -A
+  103  git commit -m "Added a Joke"
+  104  Git Push origin Header 
+  105  git push origin Header
+  106  git clone git@github.com:lozano55/Practice.2.git
+  107  mv Practice.2 cd ~/Desktop ; cd ~/Desktop ; mv Practice.2 Test
+  108  cd Test 
+  109  cd Practice.2
+  110  git add .
+  111  git commit -m "I added Index.HTML file"
+  112  git push origin main
+  113  git checkout -b Header.2
+  114  git add -A
+  115  git commit -m "Added New Info"
+  116  git push origin Header.2
+  117  git checkout main
+  118  git pull
+  119  clear
+  120  cd ..
+  121  git clone git@github.com:lozano55/Practice.3.git
+  122  cd Practice.3
+  123  open .
+  124  git add .
+  125  git commin -m "Created Index.html file"
+  126  git commit -m "Created Index.HTML file"
+  127  git push origin main
+  128  clear
+  129  cd ~
+  130  cd Desktop
+  131  ls
+  132  cd Test
+  133  ls
+  134  clear
+  135  git clone git@github.com:lozano55/Practice.3.git
+  136  cd Practice.3
+  137  git add .
+  138  git commit -m "Added Index.html File"
+  139  git push origin main
+  140  git checkout -b Header.3
+  141  git add -A
+  142  git commit -m "Added New info"
+  143  git add - A
+  144  git add -A
+  145  git commit -m "Added New info"
+  146  git push origin Header.3
+  147  git checkout main
+  148  git pull
+  149  clear
+  150  cd ~
+  151  pwd
+  152  cd Desktop
+  153  cd Test
+  154  pwd
+  155  clear
+  156  git clone git@github.com:lozano55/Official_Practice.git
+  157  cd Official_Practice
+  158  touch New File
+  159  rm -r New File
+  160  touch New.File
+  161  git add .
+  162  git commit -m "Added Index.html file & New.File"
+  163  git push origin main
+  164  clear
+  165  cd ~
+  166  pwd
+  167  clear
+  168  cd Desktop
+  169  cd Test
+  170  git clone git@github.com:lozano55/Practice.git
+  171  cd practice 
+  172  git add .
+  173  git commit -m "added Index.html file"
+  174  git push origin main
+  175  git checkout -b SecondBranch
+  176  git add -A
+  177  git commit -m "Update Info/steps"
+  178  git add -A
+  179  git commit -m "Updated Info/Steps"
+  180  git push origin SecondBranch
+  181  git checkout main
+  182  git pull
+  183  cd ~
+  184  pwd
+  185  clear
+  186  pwd 
+  187  clear
+  188  conda activate dev
+  189  jupyter lab
+  190  ls
+  191  ls
+  192  VS_Code
+  193  cd VS_Code
+  194  pwd
+  195  clear
+  196  ls
+  197  conda activate dev
+  198  python --version
+  199  code .
+  200  Python Hello_Python.py
+  201  python Hello_Python.py
+  202  clear
+  203  conda activate dev
+  204  Python Hello_Python.py
+  205  conda deactivate
+  206  clear
+  207  python Hello_Python.py
+  208  clear
+  209  Python Hello_Python.py
+  210  conda activate dev
+  211  Python Hello_Python.py
+  212  conda deactivate
+  213  clear
+  214  Python Hello_Python.py
+  215  Python Hello_Python.py
+  216  Python Hello_Python.py
+  217  Python untitled.py
+  218  Python untitled.py
+  219  python Practice.ipynb
+  220  python Practice.ipynb
+  221  clear
+  222  dev
+  223  conda activate dev
+  224  python Practice.ipynb
+  225  python untitled.py
+  226  conda activate dev
+  227  python untitled.py
+  228  python untitled.py
+  229  conda deactivate
+  230  clear
+  231  pwd
+  232  Python Hello_Python.py
+  233  Python Hello_Python.py
+  234  Python Hello_Python.py
+  235  Python untitled.py
+  236  Python untitled.py
+  237  python Practice.ipynb
+  238  python Practice.ipynb
+  239  clear
+  240  dev
+  241  conda activate dev
+  242  python Practice.ipynb
+  243  python untitled.py
+  244  conda activate dev
+  245  python untitled.py
+  246  python untitled.py
+  247  conda deactivate
+  248  clear
+  249  pwd
+  250  Python Hello_Python.py
+  251  Python Hello_Python.py
+  252  Python Hello_Python.py
+  253  Python untitled.py
+  254  Python untitled.py
+  255  python Practice.ipynb
+  256  python Practice.ipynb
+  257  clear
+  258  dev
+  259  conda activate dev
+  260  python Practice.ipynb
+  261  python untitled.py
+  262  conda activate dev
+  263  python untitled.py
+  264  python untitled.py
+  265  conda deactivate
+  266  clear
+  267  pwd
+  268  Python Hello_Python.py
+  269  Python Hello_Python.py
+  270  Python Hello_Python.py
+  271  Python untitled.py
+  272  Python untitled.py
+  273  python Practice.ipynb
+  274  python Practice.ipynb
+  275  clear
+  276  dev
+  277  conda activate dev
+  278  python Practice.ipynb
+  279  python untitled.py
+  280  conda activate dev
+  281  python untitled.py
+  282  python untitled.py
+  283  conda deactivate
+  284  clear
+  285  pwd
+  286  python untitled.py
+  287  conda activate dev
+  288  python untitled.py
+  289  python untitle.py
+  290  clear
+  291  python untitled.py
+  292  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Practice/Jupyter_Lab/Module /Practice 1/Solved/hello_variable_world.py"
+  293  python hello_variable_world.py
+  294  python hello_variable_world.py
+  295  python hello_variable_world.py
+  296  clear
+  297  cd ..
+  298  ls
+  299  cd Solved
+  300  ls
+  301  clear
+  302  python hello_variable_world.py
+  303  python hello_variable_world.py
+  304  python hello_variable_world.py
+  305  python hello_variable_world.py
+  306  conda activate dev
+  307  from pathlib import Path\n
+  308  conda deactivate 
+  309  from pathlib import Path\n
+  310  clear
+  311  conda activate dev
+  312  python csv.py
+  313  python csv.py
+  314  clear
+  315  python csv.py
+  316  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/csv.practice.py"
+  317  /usr/bin/python3
+  318  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Unkonwn.py"
+  319  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Unkonwn.py"
+  320  /usr/bin/python3
+  321  conda activate dev
+  322  python csv.practice..py
+  323  cd Unsolved
+  324  ls
+  325  cd Practice
+  326  ls
+  327  cd Unsolved
+  328  clear
+  329  ls
+  330  clear
+  331  python csv.practice..py
+  332   /usr/bin/env /usr/bin/python3 /Users/lozano55/.vscode/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 54980 -- /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV/Practice/Unsolved/csv.practice.py 
+  333   cd /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV ; /usr/bin/env /usr/bin/python3 /Users/lozano55/.vscode/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 55017 -- /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV/Practice/Unsolved/csv.practice..py 
+  334  conda activate dev
+  335   cd /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV ; /usr/bin/env /usr/bin/python3 /Users/lozano55/.vscode/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 55033 -- /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV/Practice/Unsolved/csv.practice..py 
+  336   cd /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV ; /usr/bin/env /usr/bin/python3 /Users/lozano55/.vscode/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 55053 -- /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV/Practice/Unsolved/csv.practice..py 
+  337  clear
+  338   cd /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV ; /usr/bin/env /usr/bin/python3 /Users/lozano55/.vscode/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 55117 -- /Users/lozano55/Downloads/Columbia/Columbia/1-Financial\ Programming\ Python/Class.2/CSV/Practice/Unsolved/csv.practice..py 
+  339  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Unkonwn.py"
+  340  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Unkonwn.py"
+  341  clear
+  342  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Unkonwn.py"
+  343  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Practice/Unsolved/csv.practice.py"
+  344  clear
+  345  python csv.practice.py
+  346  clear
+  347  conda activate dev
+  348  clear
+  349  python csv.practice.py
+  350  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Practice/Unsolved/csv.practice..py"
+  351  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Practice/Unsolved/csv.practice..py"
+  352  clear
+  353  conda activate dev
+  354  clear
+  355  conda dev list
+  356  conda env list
+  357  clear
+  358  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Practice/Unsolved/csv.practice..py"
+  359  pwd
+  360  /usr/bin/python3 "/Users/lozano55/Downloads/Columbia/Columbia/1-Financial Programming Python/Class.2/CSV/Practice/Unsolved/csv.practice..py"
+  361  python pathways_to_success.py
+  362  clear
+  363  /usr/bin/python3 /Users/lozano55/Downloads/02_Pathways_to_Success_Part_1/Unsolved/pathways_to_success.py
+  364  conda activate dev
+  365  clear
+  366  git clone git@github.com:lozano55/Challenge.1.git
+  367  git clone git@github.com:lozano55/Challenge.1.git
+  368  cd ..
+  369  git clone git@github.com:lozano55/Challenge.1.git
+  370  git clone git@github.com:lozano55/Challenge.1.git
+  371  clear
+  372  cd Challenge.1
+  373  pwd
+  374  clear
+  375  git add .
+  376  git commit -m "Added Challenge File and Empty File"
+  377  git push origin main
+  378  git checkout -b Work_In_Progress
+  379  git add -A
+  380  git add -A
+  381  git commit -m "Renamed file and purpose"
+  382  git push origin Work_In_Progress
+  383  clear
+  384  pwd
+  385  git checkout main
+  386  clear
+  387  git clone git@github.com:lozano55/Challenge.1.git
+  388  cd ..
+  389  cd ~
+  390  clear
+  391  cd Downloads/Columbia/Columbia
+  392  pwd
+  393  cd 1-Financial\ Programming\ Python
+  394  pwd
+  395  ls
+  396  clear
+  397  git clone git@github.com:lozano55/Challenge.1.git
+  398  cd Challenge.1
+  399  clear
+  400  git checkout -b Challenge_Update
+  401  git add -A
+  402  git commit -m "New File"
+  403  git push origin Challenge_Update
+  404  clear
+  405  conda activate dev
+  406  clar
+  407  clear
+  408  git add -A
+  409  git commit -m "Update, Part 1 Automate the Calculations. Complete"
+  410  git commit origin Challenge_Update
+  411  git push origin Challenge_Update
+  412  git checkout main
+  413  git add -A
+  414  git commit -m "Update,Part 2 Analyze Loan Data. Complete"
+  415  git push origin Challenge_Update
+  416  git checkout main
+  417  git pull 
+  418  git list
+  419  git rev-list
+  420  git status
+  421  clear
+  422  git checkout Challenge_Update
+  423  git status
+  424  git list.repos
+  425  git --help
+  426  git branch
+  427  git checkout main
+  428  git branch
+  429  clear
+  430  git branch
+  431  git add -A
+  432  git commit -m "Update, Part 3 Perform Financial Calculations.Completed" 
+  433  git push origin main
+  434  clear
+  435  git add -A
+  436  conda activate dev
+  437  pwd
+  438  clear
+  439  git branch
+  440  git add -A
+  441  conda activate dev
+  442  git branch
+  443  git add -A
+  444  git commit -m "Update, Part 4 Conditionally filter lists of loans. Completed"
+  445  git push origin main
+  446  clear
+  447  git branch
+  448  git add -A
+  449  git commit -m "Update, I am officially Done"
+  450  git push origin main
+  451  clear
+  452  git add -A
+  453  git commit -m "Comments added to Explain the Code"
+  454  git push origin main
+  455  clear
+  456  git branch
+  457  clear
+  458  conda activate dev
+  459  pip -V
+  460  pip freeze
+  461  clear
+  462  conda activate dev
+  463  pip -V
+  464  pip fire -v
+  465  pip fire -V
+  466  pip freeze
+  467  clear
+  468  pwd
+  469  clear
+  470  conda activate dev
+  471  jupyter lab
+  472  clear
+  473  jupyter lab
+  474  clear
+  475  jupyter lab
+  476  clear
+  477  conda deactivate
+  478  clear
+  479  conda activate dev
+  480  jupyter lab
+  481  conda deactivate
+  482  clear
+  483  conda activate dev
+  484  jupyter lab
+  485  conda deactivate
+  486  clear
+  487  conda activate dev
+  488  jupyter lab
+  489  jupyter lab
+  490  conda deactivate
+  491  clear
+  492  conda activate dev
+  493  jupyter lab
+  494  conda deactivate
+  495  clear
+  496  conda activate dev
+  497  jupyter lab
+  498  conda deactivate
+  499  clear
+  500  cd Downloads
+  501  cd Columbia 
+  502  ls
+  503  cd Module 1 Practice
+  504  cd Module\ 1\ Practice/
+  505  ls
+  506  cd VS_Code
+  507  code .
+  508  code .
+  509  cler
+  510  clear
+  511  conda activate dev
+  512  code .
+  513  code .
+  514  open .
+  515  vscode .
+  516  clear
+  517  cd ~
+  518  clear
+  519  jupyter lab
+  520  conda deactivate
+  521  clear
+  522  pwd
+  523  clear
+  524  cd Downloads ; cd Columbia ; ls
+  525  cd Module\ 1\ Practice
+  526  ls
+  527  VS_Code
+  528  cd VS_Code
+  529  ls
+  530  code .
+  531  code .
+  532  conda activate dev
+  533  python Hello_Python.py
+  534  conda deactivate
+  535  clear
+  536  cd ~
+  537  clear
+  538  pwd
+  539  cd Downloads
+  540  cd Columbia
+  541  cd Module\ 1\ Practice
+  542  cd VS_Code
+  543  ls
+  544  conda activate dev
+  545  code .
+  546  ls
+  547  python Hello_Python.py
+  548  conda deactivate
+  549  cd ~
+  550  clear
+  551  conda activate dev
+  552  jupyter lab
+  553  conda deactivate
+  554  clear
+  555  conda activate dev
+  556  jupyter lab
+  557  conda deactivate
+  558  clear
+  559  conda activate dev
+  560  jupyter lab
+  561  conda deactivate
+  562  clear
+  563  pwd
+  564  clear
+  565  conda activate dev
+  566  jupyter lab
+  567  conda deactivate
+  568  clear
+  569  pwd
+  570  cd Downloads
+  571  cd Columbia
+  572  ls
+  573  cd Practice
+  574  ls
+  575  mkdir Github
+  576  ls
+  577  touch index.py
+  578  touch index.py
+  579  mv index.py touch.py
+  580  mvindex.py github
+  581  mv index.py github
+  582  mv index.py Github
+  583  mv touch.py Github
+  584  mv touch.py letgo.py
+  585  cd Github
+  586  mv touch.py letgo.py
+  587  clear
+  588  git clone git@github.com:lozano55/Practice-.git
+  589  cd Practice-
+  590  git add .
+  591  git commit -m "New Directions"
+  592  git push origin main
+  593  git add .
+  594  git commit -m "additional"
+  595  git add .
+  596  git commit -m "additional"
+  597  git push origin main
+  598  git checkout -b Branch2
+  599  git add -A
+  600  git commit -m "New info"
+  601  git push origin Branch2
+  602  git checkout main
+  603  git pull
+  604  clear
+  605  cd ~
+  606  pwed
+  607  pwd
+  608  clear
+  609  conda activate dev
+  610  jupyter lab
+  611  conda deactivate
+  612  clear
+  613  conda activate dev
+  614  jupyter lab
+  615  conda deactivate
+  616  clear
+  617  conda activate dev
+  618  jupyter lab
+  619  conda deactivate
+  620  clear
+  621  conda activate
+  622  clear
+  623  conda activate dev
+  624  jupyter lab
+  625  conda env list
+  626  clear
+  627  conda current list
+  628  conda list
+  629  clear
+  630  conda dev list
+  631  conda env list
+  632  clear
+  633  conda env list
+  634  jupyter lab
+  635  clear
+  636  conda env list
+  637  jupyter lab
+  638  conda deactivate
+  639  clear
+  640  pwd
+  641  cd ~
+  642  cd Desktop
+  643  ls
+  644  ds Mom\ Drivers\ Lisence
+  645  cd Mom\ Drivers\ Lisence
+  646  cd../ cd..
+  647  cd.. ; cd..
+  648  cd..
+  649  clear
+  650  cd ..
+  651  cd Mom\ Drivers\ Lisence
+  652  cd ..; cd ..
+  653  pwd
+  654  cd Downloads/Columbia
+  655  pwd
+  656  cd !
+  657  cd ~
+  658  pwd
+  659  clear
+  660  cd Downloads/Columbia/Gitlab
+  661  pwd
+  662  cd 02-Financial-Applications-Python
+  663  cd ~
+  664  clear
+  665  cd Desktop/ls
+  666  cd Desktop ; ls
+  667  cd Mom\ Drivers\ Lisence/
+  668  cd ~
+  669  pwd
+  670  clear
+  671  dev env list
+  672  conda env list
+  673  clear
+  674  conda env list
+  675  conda activate dev
+  676  jupyter lab
+  677  clear
+  678  conda env list
+  679  jupyter lab
+  680  clear
+  681  conda env list
+  682  jupyter lab
+  683  clear
+  684  conda env list
+  685  jupyter lab
+  686  clear
+  687  jupyter lab
+  688  clear
+  689  pip install fire\n
+  690  pip install questionary
+  691  clear
+  692  jupyter lab
+  693  clear
+  694  pip install fire
+  695  pip install questionary
+  696  jupyter lab
+  697  clear
+  698  conda deactivate
+  699  clear
+  700  conda activate dev
+  701  clear
+  702  jupyter lab
+  703  clear
+  704  jupyter lab
+  705  clear
+  706  pip install fire
+  707  clear
+  708  jupyter lab
+  709  clear
+  710  pip install questionary\n
+  711  clear
+  712  jupyter lab
+  713  clear
+  714  git config --list
+  715  git status
+  716  git
+  717  git status
+  718  git
+  719  git help
+  720  clear
+  721  git help
+  722  clear
+  723  jupyter lab
+  724  clear
+  725  cd Downloads/Columbia/Columbia/2-Financial\ Applications\ Python/Class.2/Documenting\ Complex\ Projects
+  726  ls
+  727  cd Practice\ Repo
+  728  ls
+  729  clear
+  730  git clone git@github.com:lozano55/MarkDownPractice.git
+  731  cd ..
+  732  cd .Trash
+  733  cd ~
+  734  clear
+  735  cd Downloads/Columbia/Columbia/2-Financial\ Applications\ Python/Class.2/Documenting\ Complex\ Projects/Documenting\ Complex\ Projects.ipynb
+  736  cd Downloads/Columbia/Columbia/2-Financial\ Applications\ Python/Class.2/Documenting\ Complex\ Projects
+  737  ls
+  738  clear
+  739  git clone cd Downloads/Columbia/Columbia/2-Financial\ Applications\ Python/Class.2/Documenting\ Complex\ Projects/Documenting\ Complex\ Projects.ipynb\ncd: not a directory: Downloads/Columbia
+  740  clear
+  741  ls
+  742  clear
+  743  git clone git@github.com:lozano55/MarkDownPractice.git
+  744  clear
+  745  jupyter 
+  746  clear
+  747  jupyter lab
+  748  clear
+  749  cd ..
+  750  cd ..
+  751  ls
+  752  cd Challenge.2
+  753  ls
+  754  clear
+  755  git status
+  756  git clone git@github.com:lozano55
+  757  git clone git@github.com:lozano55/Challenge.2.git
+  758  git clone git@github.com:lozano55/Challenge.2.git
+  759  cd ..
+  760  cd ~
+  761  clear
+  762  cd Downloads/Columbia/Columbia/2-Financial\ Applications\ Python
+  763  ls
+  764  clear
+  765  git clone git@github.com:lozano55/Challenge.2.git
+  766  git status 
+  767  cd Challenge.2
+  768  ls
+  769  git status
+  770  git add -A
+  771  git status
+  772  git commit -m "loan qualifier app folder added"
+  773  git push origin main
+  774  clear
+  775  ls
+  776  clear
+  777  git status
+  778  git add -A
+  779  git status
+  780  "git restore --staged <file>..."
+  781  git status
+  782  git add -A
+  783  git commit -m "Modified Readme.md and added new functionality to display list of loans"
+  784  git push origin main
+  785  git add -A
+  786  git commit -m "New Function added"
+  787  git push origin main
+  788  history 50 > terminal_history.txt\n
+  789  history 50 > terminal_history.txt\n
+  790  git add -A
+  791  git commit -m "recent 50 commands"
+  792  git push origin main
+  793  clear
+  794  history 50 > terminal_history.txt
+  795  git add -A
+  796  git commit -m "terminal History"
+  797  git push origin main
+  798  git pull
+  799  clear
+  800  git add -A
+  801  clear
+  802  history 50 > terminal_history.txt
+  803  git add -A
+  804  git commit -m "Added Terminal History"
+  805  git push origin main
+  806  clear
+  807  git add -A
+  808  git pull
+  809  clear
+  810  clear
+  811  cd ~
+  812  git clone git@github.com:lozano55/Challenge.2.git
+  813  ls 
+  814  mv Challenge.2/ Downloads
+  815  clear
+  816  cd Downloads/Columbia/Columbia/2-Financial\ Applications\ Python/Challenge.2
+  817  ls
+  818  cd loan_qualifier_app
+  819  clear
+  820  cd ..
+  821  git status
+  822  clear
