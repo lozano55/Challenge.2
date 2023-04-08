@@ -12,7 +12,7 @@ import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv, save_csv
+from qualifier.utils.fileio import load_csv, save_csv, save_qualifying_loans
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -102,68 +102,6 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     print(f"Found {len(bank_data_filtered)} qualifying loans")
 
     return bank_data_filtered
-
-
-def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    save_file = questionary.confirm("Do you want to Save the Qualifying loans into a file?").ask()
-
-    if save_file == True:
-        file_name = questionary.text("Please Enter a name for this file (!Do not include .csv!)").ask()
-        preferred_path = questionary.confirm("If You Know your Preffered Path Enter (Y) If you dont know what a Path Is Enter(n)").ask()
-
-        """Ask the User if Loans should be saved into a file if yes, then code Proceeds 
-
-
-         Args:
-            - Asks User To Input a name for the file, That does not include (.csv) at the end
-            - It Then asks For a preffered Path
-
-         """
-
-        if preferred_path == False:
-            csvpath = (f"{file_name}.csv")
-            csvpath = Path(csvpath)
-            save_csv(csvpath, qualifying_loans)
-
-        elif preferred_path == True:
-            enter_path = questionary.text("Only Enter Your Desired Path(Do Not Include in it This File Name)").ask()
-            csvpath = (f"{file_name}.csv")
-            csvpath = (f"{enter_path}/{csvpath}")
-            csvpath = Path(csvpath)
-            save_csv(csvpath, qualifying_loans)
-
-        """ Preffered Path 
-
-        Args:
-            -  If the User does not know the preffered path to place the File. The File will automatically save into the current Folder 
-            -  If the User Knows the Preffered path to place the file then he will include only the path name to the Directory/Folder 
-                should not Include The loan File Name. The File Will then automatically save into the preffered Directory/Folder/Path
-        
-        """
-
-
-
-
-#def save_qualifying_loans(qualifying_loans):
-    #save_file = questionary.confirm("Do you want to Save the Qualifying loans into a file?").ask()
-
-    #if save_file == True:
-        #file_name = questionary.text("Please Enter a name for this file or Enter a File Path that includes a name for this file (!Do not include .csv!)").ask()
-        #csvpath = (f"{file_name}.csv")
-        #csvpath = Path(csvpath)
-        #save_csv(csvpath, qualifying_loans)
-    """ Similar to the code above, but more direct. Asking the User if Loan files should be saved if yes, code proceeds
-    
-    Args:
-        - This asks the The user to Enter a File name or File Path that includes a name for the loan file without including(.csv). 
-            the code then automatically saves file into. 1. The current Folder the User is in or 2. the preffered path chosen 
-     """
-
 
 
 

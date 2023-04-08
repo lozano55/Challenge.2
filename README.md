@@ -66,7 +66,7 @@ Now To Install the Dependencies Input These Commands into your command line
 
 &nbsp;
 
-![Example Image](./loan_qualifier_app/pictures/Photo.png)
+![Example Image](./pictures/Photo.png)
 &nbsp;
 
 ---
@@ -91,7 +91,7 @@ Martin Lozano
 
 &nbsp;
 
-Basic code functionality for [questionary](https://questionary.readthedocs.io/en/stable/pages/types.html#confirmation)
+Understanding code functionality for  [questionary](https://questionary.readthedocs.io/en/stable/pages/types.html#confirmation)
 
 ---
 
@@ -117,49 +117,59 @@ def save_csv(csvpath, qualifying_loans):
 
 2. This is a Highly interactive and User Friendly function that allows the User to choose a few options 
 
-First the Function asks the User if Loan File Should Be saved 
->- If The User Choose(n): to not save the file, then no file saves.
->- If the User Choose(Y): then the User will be prompted to Type a name for the file(not including .csv)
+First the CLI asks the User if a Loan File Should Be saved 
+>- If the User Choose(n): then no file saves regardless of eligibily on a loan.
+>- If the User Choose(Y): But was not eligible for at least 1 loan, then the CLI Automatically exits system and displays message 
+>- If the User Choose(Y): and User was eligible for at least 1 loan then, then User will be prompted to Type a name for the file(not including the .csv at the end of the file name)
 
 &nbsp;
 
 
-The Function then propmts the User if there is a preffered path to store the file 
->- If the User Choose (n): Then the File is saved to the current folder the User is in 
->- if the User Choose (Y): Then The User is Directed to Type in the Path (Not Including the Loan File). making the saved file be stored in the preffered path
+The CLI then prompts the User if there is a preffered path to store the file 
+>- If the User Choose (n): Then the File is saved to the current folder the User is in, the system Automatically exits, and displays message 
+>- if the User Choose (Y): Then The User is will then be prompted to Type in the Path (Not Including the Loan File name just typed (Example: ./data)). This then saves the file into the preffered path and then displays a few helpful messages.
 
 ```python
 def save_qualifying_loans(qualifying_loans):
-
+  
     save_file = questionary.confirm("Do you want to Save the Qualifying loans into a file?").ask()
 
     if save_file == True:
-        file_name = questionary.text("Please Enter a name for this file (!Do not include .csv!)").ask()
-        preferred_path = questionary.confirm("If You Know your Preffered Path Enter (Y) If you dont know what a Path Is Enter(n)").ask()
+            
+        if len(qualifying_loans) >= 1:
+            file_name = questionary.text("Please Enter a name for this file (!Do not include .csv!)").ask()
+            preferred_path = questionary.confirm("If You Know your Preffered Path Enter (Y) If you dont know what a Path Is Enter(n)").ask()
 
-        if preferred_path == False:
-            csvpath = (f"{file_name}.csv")
-            csvpath = Path(csvpath)
-            save_csv(csvpath, qualifying_loans)
 
-        elif preferred_path == True:
-            enter_path = questionary.text("Only Enter Your Desired Path(Do Not Include in it This File Name)").ask()
-            csvpath = (f"{file_name}.csv")
-            csvpath = (f"{enter_path}/{csvpath}")
-            csvpath = Path(csvpath)
-            save_csv(csvpath, qualifying_loans)
+            if preferred_path == False:
+                csvpath = (f"{file_name}.csv")
+
+                print(f"Thank you for your time! Your Qualifying loans were saved to your Current Folder as {csvpath}")
+                print(f"Dont hesitate to Contact us if you have any questions, Have a great Day!")
+
+                csvpath = Path(csvpath)
+                save_csv(csvpath, qualifying_loans)
+
+            elif preferred_path == True:
+                enter_path = questionary.text("Only Enter Your Desired Path(Do Not Include in it This File Name (Example ./data)").ask()
+                csvpath = (f"{file_name}.csv")
+                print(f"Thank you for your time! Your Qualifying loans were saved as {csvpath}")
+                print(f"Dont hesitate to Contact us if you have any questions, Have a great Day!")
+
+                csvpath = (f"{enter_path}/{csvpath}")
+                print(f"The Relative path is: {csvpath}")
+                csvpath = Path(csvpath)
+                print(f"The Absolute path is {csvpath.absolute()}")
+
+                save_csv(csvpath, qualifying_loans)
+
+        
+        elif len(qualifying_loans) <= 0:
+            sys.exit("We are Sorry, It looks like There are currently no eligible Loans to save. Have a Great Day!")
+
+    if save_file == False:
+        print("Thank you for your time! Contact us if you have any questions, Have a great Day!")
+
+
 ```
 &nbsp;
-
-* For a more direct approach Utilize 
-```python
-def save_qualifying_loans(qualifying_loans):
-    save_file = questionary.confirm("Do you want to Save the Qualifying loans into a file?").ask()
-
-    if save_file == True:
-        file_name = questionary.text("Please Enter a name for this file or Enter a File Path that includes a name for this file (!Do not include .csv!)").ask()
-        csvpath = (f"{file_name}.csv")
-        csvpath = Path(csvpath)
-        save_csv(csvpath, qualifying_loans)
-
-```
